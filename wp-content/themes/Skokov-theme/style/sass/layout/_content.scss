@@ -1,0 +1,338 @@
+//SLIDER-SECTION
+.slider-section {
+  .carousel {
+    background: url("../../images/slider-bg.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    width: 45px;
+    height: 100px;
+    top: 40%;
+    opacity: 1;
+    background: #000;
+  }
+  .carousel-indicators {
+    .active {
+      background: $yellow;
+    }
+    li {
+      max-width: 16px;
+      height: 16px;
+      background: $darkGray;
+      border: 2px solid $darkGray;
+    }
+  }
+  .carousel-item {
+    width: 100%;
+    padding: 0 10%;
+    margin: 10px 0 40px 0;
+    .photos-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      li img {
+        width: 25%;
+        height: auto;
+      }
+      .photos-row-2 {
+        overflow: hidden;
+        img {
+          float: right;
+        }
+      }
+      .photos-row-4 {
+        img {
+          margin-left: 25%;
+        }
+      }
+
+    }
+  }
+  .slider-text {
+    margin-top: 50px;
+    position: relative;
+    right: -35px;
+    h2 {
+      margin-bottom: 1vw;
+      line-height: 5vw;
+      span {
+        color: $black;
+        font-family: $Gothic;
+        font-size: 4vw;
+        font-weight: 400;
+        background: $yellow;
+        text-transform: uppercase;
+        margin: 1vw 0;
+      }
+    }
+    p {
+      display: block;
+      line-height: 2.5vw;
+      width: 65%;
+      margin-bottom: 2vw;
+      span  {
+        color: $white;
+        font-family: $Gothic;
+        font-size: 1.6vw;
+        font-weight:400;
+        background: $darkGray;
+      }
+    }
+    button {
+      padding: 0 20px;
+      margin-left: 30%;
+    }
+  }
+}
+//SLIDER-SECTION-END
+
+//DESIGNS-SECTION
+.designs-sction {
+  padding-top: 6.25rem;
+  margin-bottom: 6.25rem;
+  h2 {
+    font-family: $Gothic;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    &+p {
+      font-family: $Gothic;
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .designs-list {
+    @include transition(0.5s);
+    li {
+      @include transition(0.5s);
+      position: relative;
+      max-width: 250px;
+      width: 100%;
+      margin: 15px;
+      &:hover .hover-block {
+        @include transition(0.5s);
+        display: none;
+      }
+      .hover-block {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: yellow;
+      }
+    }
+  }
+}
+
+.hover-block-head-1 {
+  p {
+    font-family: $Gothic;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: $black;
+    &:before {
+      content: url("../../images/graphic-design-icon.png");
+      display: block;
+      width: 110px ;
+      height: 110px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.hover-block-head-2, .hover-block-head-3, .hover-block-head-4 {
+  @extend .hover-block-head-1
+}
+.hover-block-head-2 {
+  p:before {
+    content: url("../../images/web-development.png");
+  }
+}
+
+.hover-block-head-3 {
+  p:before {
+    content: url("../../images/web-design-icon.png");
+  }
+}
+
+.hover-block-head-4 {
+  p:before {
+    content: url("../../images/graphic-design-icon.png");
+  }
+}
+
+.hover-block-footer {
+  text-align: center;
+  height: 30%;
+  background: $darkGray;
+  p {
+    font-family: $Gothic;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: $white;
+  }
+}
+
+.hvr-bubble-top {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #666;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $darkGray;
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    right: 10px;
+    top: 0;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent $darkGray transparent;
+  }
+  h3 {
+    font-family: $Gothic;
+    font-size: 20px;
+    color: $white;
+    text-transform: uppercase;
+  }
+  p {
+    color: $white;
+    text-align: end;
+  }
+}
+.designs-list li:hover .hvr-bubble-top:before {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+//DESIGNS-SECTION-END
+
+//OUR-WORK-SECTION
+
+.h2-border {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-family: $Gothic;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 0 10px;
+  margin-bottom: 1.8rem;
+  color: $yellow;
+  text-transform: uppercase;
+  background-color: $darkGray;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    height: 1px;
+    background-color: $grayBorder;
+  }
+  &:before {
+    right: 120%;
+    left: -9999%;
+  }
+
+  &:after {
+    right: -9999%;
+    left: 120%;
+  }
+}
+
+.p-style {
+  font-family: $Gothic;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.our-work {
+  text-align: center;
+  overflow: hidden;
+}
+.grid {
+  margin: 0 auto;
+  margin-bottom: 6.25rem;
+}
+.grid-item {
+  width: 200px;
+  a{
+    display: block;
+    @include transition(0.5s);
+    &:hover {
+      -webkit-transform: rotate(-10deg);
+      -moz-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+
+    }
+  }
+}
+
+.grid-item--width2 {
+  width: 400px;
+}
+//OUR-WORK-SECTION-END
+
+//OUR-CLIENTS
+//slider
+.multiple-items {
+  width: 95%;
+  margin: 0 auto 7.5rem auto;
+
+}
+.slick-next:before {
+  content: url("../../images/right-arrow.png");
+}
+.slick-prev:before {
+  content: url("../../images/left-arrow.png");
+}
+.slick-prev, .slick-next{
+  z-index: 1;
+  width: 46px;
+  height: 65px;
+  background-color: black;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  background-color: $black;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+//slider-end
+.our-clients {
+  overflow: hidden;
+  text-align: center;
+}
+
+
