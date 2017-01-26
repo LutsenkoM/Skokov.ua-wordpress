@@ -23,7 +23,7 @@
 <!--        <li><a href="#">Blog</a></li>-->
 <!--        <li><a href="#">About us</a></li>-->
 <!--        <li><a href="#">Contact</a></li>-->
-<!--   </ul>--->
+<!--   </ul>-->
 
     <button id="button-menu">
         <span class="icon-bar"></span>
@@ -34,10 +34,10 @@
 </header>
 
 <?php wp_nav_menu(array('theme_location' => 'nav-bar', 'menu_class'=>'hide-nav-bar', 'container'=> 'false')); ?>
-<!--<ul class="hide-nav-bar ">-->
-<!--    <li><a href="#">Home</a></li>-->
-<!--    <li><a href="#">Portfolio</a></li>-->
-<!--    <li><a href="#">Blog</a></li>-->
-<!--    <li><a href="#">About us</a></li>-->
-<!--    <li><a href="#">Contact</a></li>-->
-<!--</ul>-->
+<!--    <ul class="hide-nav-bar ">-->
+<!--        <li><a href="#">Home</a></li>-->
+<!--        <li><a href="#">Portfolio</a></li>-->
+<!--        <li><a href="#">Blog</a></li>-->
+<!--        <li><a href="#">About us</a></li>-->
+<!--        <li><a href="#">Contact</a></li>-->
+<!--    </ul>-->
