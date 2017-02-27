@@ -15,7 +15,11 @@
         <h1>Skokov</h1>
     </div>
 
-    <?php wp_nav_menu(array('theme_location' => 'nav-bar', 'menu_class'=>'nav-bar d-flex flex-row align-items-center ', 'container'=> 'false')); ?>
+    <?php wp_nav_menu(array(
+        'theme_location' => 'nav-bar',
+        'menu_class'=>'nav-bar d-flex flex-row align-items-center ',
+        'container'=> 'false'));
+    ?>
 
 <!--    <ul class="nav-bar d-flex flex-row align-items-center">-->
 <!--        <li><a href="--><?php //home_url(); ?><!--">Home</a></li>-->
